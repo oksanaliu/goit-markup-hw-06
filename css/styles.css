@@ -270,6 +270,8 @@ a {
     margin-left: 16px;
 }
 
+
+
 /* Card set */
 .card-set {
     display: flex;
@@ -1265,5 +1267,26 @@ input[type="checkbox"]:checked+.form-agreement .checkbox .checkbox-icon {
     color: rgba(64, 64, 64, 0.6);
 }
 
+
+/* #endregion */
+/* #region Mobile menu */
+.mobile-menu-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 28px;
+    min-height: 28px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+@media only screen and (min-width: 768px) {
+    .mobile-menu-btn {
+        display: none;
+    }
+}
+
+.mobile-menu-icon {}
 
 /* #endregion */
