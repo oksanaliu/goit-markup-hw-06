@@ -552,17 +552,45 @@ a {
     }
 }
 
-
-
-
 .hero-title {
     max-width: 496px;
-
-    font-size: 56px;
+    margin: 0 auto;
+    font-size: 36px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: var(--letter-spacing-normal);
     color: var(--color-bg);
+}
+
+@media screen and (min-width: 768px) {
+    .hero-title {
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+        margin: 0 auto 36px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .hero-title {
+        margin: 0 auto 48px;
+    }
+}
+
+
+
+/* hgjhk */
+.company__text {
+    color: var(--color-slate);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 1158px) {
+    .company__text {
+        font-weight: 400;
+    }
 }
 
 /* #endregion Hero */
