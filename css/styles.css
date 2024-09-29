@@ -1497,6 +1497,8 @@ input[type="checkbox"]:checked+.form-agreement .checkbox .checkbox-icon {
 }
 
 .social-list {
+    margin-top: 46px;
+
     display: flex;
     justify-content: center;
     gap: 40px;
