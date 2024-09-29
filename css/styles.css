@@ -1429,6 +1429,12 @@ input[type="checkbox"]:checked+.form-agreement .checkbox .checkbox-icon {
     text-align: left;
 }
 
+.mobile-nav-link:hover,
+.mobile-nav-link:focus,
+.mobile-nav-link.current {
+    color: #404bbf;
+}
+
 .mobile-nav-item {
     padding-bottom: 40px;
 }
@@ -1448,6 +1454,12 @@ input[type="checkbox"]:checked+.form-agreement .checkbox .checkbox-icon {
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-contacts-link:hover,
+.mobile-contacts-link:focus,
+.mobile-contacts-link.current {
+    color: #404bbf;
 }
 
 .mobile-contacts-item:nth-child(1) {
