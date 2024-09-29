@@ -289,16 +289,36 @@ a {
 /* #region Header */
 
 .container {
-    width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
-    max-width: 100%;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+    }
 }
 
 .header {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
         0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
 }
 
 .header-container {
@@ -329,6 +349,18 @@ a {
     gap: 20px;
 }
 
+@media screen and (min-width: 768px) {
+
+    .mobile-open-btn,
+    .mobile-menu {
+        display: none;
+    }
+
+    .nav-list {
+        display: flex;
+    }
+}
+
 @media only screen and (max-width: 767.98px) {
     .nav-list {
         display: none;
@@ -344,6 +376,11 @@ a {
 .nav-item {
     background-color: #fff;
 }
+
+/* .nav-list,
+.header-contact {
+  display: none;
+} */
 
 .nav-link {
     display: block;
@@ -1312,6 +1349,118 @@ input[type="checkbox"]:checked+.form-agreement .checkbox .checkbox-icon {
         display: none;
     }
 }
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    color: #2e2f42;
+    overflow-y: auto;
+
+    transform: translateX(100%);
+}
+
+.mobile-menu.is-open {
+    transform: translateX(0%);
+
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-container {
+    position: relative;
+}
+
+.mobile-menu-cancel-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    line-height: 0;
+    padding: 0;
+    border-radius: 100%;
+    border-color: #e7e9fc;
+    border-width: 1px;
+    background-color: transparent;
+}
+
+.mobile-menu-cancel-btn-icon {
+    fill: #2e2f42;
+}
+
+.mobile-menu-nav {
+    padding-top: 72px;
+    margin-bottom: 168px;
+}
+
+.mobile-contacts {
+    margin-bottom: 48px;
+}
+
+.mobile-nav-link {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-nav-item {
+    padding-bottom: 40px;
+}
+
+.mobile-nav-item:nth-child(3) {
+    padding-bottom: 0px;
+}
+
+.mobile-contacts-link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-contacts-item:nth-child(1) {
+    padding-bottom: 24px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    fill: #f4f4fd;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 
 .mobile-menu-icon {}
 
