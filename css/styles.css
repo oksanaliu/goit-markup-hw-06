@@ -362,7 +362,7 @@ a {
     }
 
     .nav-list {
-        display: flex;
+        display: none;
     }
 
 }
