@@ -1443,6 +1443,7 @@ input[type="checkbox"]:checked+.form-agreement .checkbox .checkbox-icon {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #434455;
+    text-align: left;
 
     transition-property: color;
     transition-duration: 250ms;
