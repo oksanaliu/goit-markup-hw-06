@@ -378,16 +378,13 @@ a {
     }
 
     .nav-list {
-        display: none;
+        display: flex;
     }
 
     .contact-list {
         flex-direction: column;
     }
 
-    .logo {
-        margin-left: 16px;
-    }
 }
 
 @media only screen and (min-width: 1200px) {
