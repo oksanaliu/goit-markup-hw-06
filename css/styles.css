@@ -556,7 +556,6 @@ a {
 
 .service-wrapper {
     display: none;
-    /* Іконки приховані за замовчуванням */
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -574,7 +573,6 @@ a {
     height: 48px;
 }
 
-/* Заголовок та опис під іконкою */
 .service-title {
     font-size: 20px;
     margin-bottom: 8px;
@@ -586,24 +584,19 @@ a {
     letter-spacing: var(--letter-spacing-normal);
 }
 
-/* Tablet layout */
 @media only screen and (min-width: 768px) {
     .service-item {
         width: calc((100% - 48px) / 2);
-        /* 2 items per row */
     }
 }
 
-/* Desktop layout: показуємо іконки */
 @media only screen and (min-width: 1200px) {
     .service-item {
         width: calc((100% - 72px) / 4);
-        /* 4 items per row */
     }
 
     .service-wrapper {
         display: flex;
-        /* Іконки видно тільки на десктопах */
     }
 }
 
