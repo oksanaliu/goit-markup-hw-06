@@ -1350,6 +1350,7 @@ input[type="checkbox"]:checked+.form-agreement .checkbox .checkbox-icon {
     padding: 0;
     border: none;
     background-color: transparent;
+    margin-right: 20;
 }
 
 @media only screen and (min-width: 768px) {
