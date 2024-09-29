@@ -277,8 +277,8 @@ img {
     background-image:
         linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url(../images/people-office1.jpg),
-        url(../images/Dark-bg.jpg);
+        url(./images/people-office1.jpg),
+        url(./images/Dark-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -290,8 +290,8 @@ img {
     .hero__bg-image {
         background-image:
             linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(../images/people-office1@2x.jpg),
-            url(../images/Dark-bg@2x.jpg);
+            url(./images/people-office1@2x.jpg),
+            url(./images/Dark-bg@2x.jpg);
 
     }
 }
