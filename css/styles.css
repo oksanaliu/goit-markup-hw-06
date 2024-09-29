@@ -714,7 +714,7 @@ a {
     background-color: white;
 } */
 
-.services-title {
+/* .services-title {
     margin-bottom: 8px;
     font-weight: var(--font-weight-normal);
     font-size: 36px;
@@ -737,7 +737,7 @@ a {
     clip: rect(0, 0, 0, 0);
     border: 0;
     overflow: hidden;
-}
+} */
 
 /* .service-list {
     display: flex;
