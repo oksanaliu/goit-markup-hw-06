@@ -270,10 +270,16 @@ img {
 }
 
 .hero__bg-image {
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    max-width: 1440px;
+    padding: 188px 0;
+    margin: 0 auto;
+    background-color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    box-sizing: border-box;
     background-image:
         linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
@@ -287,15 +293,14 @@ img {
 
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
-    .hero__bg-image {
+    .section-hero {
         background-image:
             linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/people-office1@2x.jpg),
             url(../images/Dark-bg@2x.jpg);
-
-
     }
 }
+
 
 
 
