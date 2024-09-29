@@ -537,6 +537,7 @@ a {
 .service-list {
     display: flex;
     gap: 24px;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 72px;
@@ -575,8 +576,10 @@ a {
 
 @media only screen and (min-width: 1200px) {
     .service-item {
+
         --items: 4;
         --indent-row: 24px;
+
     }
 }
 
